@@ -1,12 +1,42 @@
-body {
-    background-color: aquamarine;
-    padding: 50px;
-    position: relative;
-    display: flex;
+body{
+    background-color: rgba(220, 220, 220, 0.7);
+}
+/* Basic styles for the sidebar */
+.sidebar {
+    background-color: white;
+    width: 10%;
+    height: 100%;
+    position: fixed;
+    padding-top: 0px;
+    top: 0;
+    left: 0;
 }
 
-.block {
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: none;
+}
+
+.sidebar li {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    color: black;
+    border-bottom: 1px solid gray;
     background-color: white;
-    min-height: 200px;
-    margin: 5px;
+    text-align: center;
+}
+
+.sidebar li:hover {
+    background-color: lightblue;
+}
+
+.sidebar li:active {
+    color: white;
+    background-color: blue;
+}
+
+.content {
+    margin-left: 250px; /* Adjust this value to match the sidebar width */
+    padding: 20px;
 }
