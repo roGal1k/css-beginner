@@ -6,18 +6,25 @@ body {
     align-items: center;
 }
 
-p {
+.content{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-p:first-line {
-    color: #0000FF;
+h1{
+    color: rgb(0, 140, 0);
 }
 
-p:first-letter {
-  font-size: 30px;
-  color: #FF0000;
+p:first-line {
+    font-size:xx-large;
+    color: rgb(60, 90, 0);
+}
+a {
+    text-align: center;
+    display: block;
+}
+p{
+    font-size:large;
 }
