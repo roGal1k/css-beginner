@@ -1,0 +1,11 @@
+body{
+    background-image: url(https://img-fotki.yandex.ru/get/67890/136164467.17/0_12bc81_21263ac1_orig.png);
+    background-repeat: repeat;
+}
+
+.rectangle-empty{
+    margin: auto;
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+}
