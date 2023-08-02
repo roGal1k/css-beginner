@@ -1,0 +1,12 @@
+body {
+    background-color: aquamarine;
+    padding: 50px;
+    position: relative;
+    display: flex;
+}
+
+.block {
+    background-color: white;
+    min-height: 200px;
+    margin: 5px;
+}
