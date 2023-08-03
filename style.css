@@ -37,6 +37,6 @@ body{
 }
 
 .content {
-    margin-left: 250px; /* Adjust this value to match the sidebar width */
+    margin-left: 250px;
     padding: 20px;
 }
