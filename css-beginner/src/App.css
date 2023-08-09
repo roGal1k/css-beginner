@@ -1,7 +1,0 @@
-body{
-    display: grid;
-    grid-template-rows: 3;
-    grid-template-columns: 1;
-    grid-auto-rows: auto;
-    grid-auto-columns: auto;
-}

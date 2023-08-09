@@ -1,13 +1,18 @@
 import React from "react";
-import style from "./styles.css"
+import "./styles.css"
 
-const Header = () => {
+const Sidebar = () => {
     return ( 
-        <>
-
-
-        </>
+        <bar>
+            <ul>
+                <li>Last projects</li>
+            </ul>
+            <br/>
+            <ul>
+                <li>Last projects</li>
+            </ul>
+        </bar>
     );
 }
  
-export default Header;
+export default Sidebar;

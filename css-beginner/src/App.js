@@ -1,8 +1,10 @@
-import './App.css';
+import React from 'react';
+
 import Header from './Header/Header';
-import Footer from './Footer/Footer'
-import Sidebar from './Sidebar/Sidebar'
+//import Footer from './Footer/Footer'
+//import Sidebar from './Sidebar/Sidebar'
 import Home from './Pages/Home/Home'
+//import Library from './Pages/Library/Library' 
 
 function App() {
   return (
@@ -11,11 +13,8 @@ function App() {
       </header>
       <body>
         <Header/>
-        <div>
-          <Sidebar/>
-          <Home/>
-        </div>
-        <Footer/>
+        {/*<Library/>*/}
+        <Home/>
       </body>
     </div>
   );

@@ -1,15 +1,29 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {createStore} from "redux"
+import { Provider } from 'react';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const defaultState = {
+  save:true,
+}
 
-root.render(
-  <React.StrictMode>
+const reducer =(state = defaultState, action)=>{
+  switch(action.type)
+  {
+    case "SAVE":
+      return {...state, save: action.save};
+    case "CLOSE":
+      return {...state, page: action.save};
+    default: return state;
+  }
+}
+
+const addProject = createStore(reducer)
+
+ReactDOM.render(
+  <Provider addProject={addProject}>
     <App />
-  </React.StrictMode>
+  </Provider>,
+  document.getElementById('root')
 );
-
-reportWebVitals();

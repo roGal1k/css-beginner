@@ -1,0 +1,26 @@
+bar{
+    position: fixed;
+    top: 4em;
+    left: 0;   
+    width: 200px;
+    height: -moz-fit-content;   
+    height: fit-content;
+}
+
+ul{
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: #262626;
+    list-style-type: none;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 15px;
+    box-shadow: 2px 1px 10px rgba(255, 255, 255, 0.49);
+
+}
+
+li{
+    font-family:'Switzer-Regular' ;
+    color: white;
+    font-size: 24;
+}
