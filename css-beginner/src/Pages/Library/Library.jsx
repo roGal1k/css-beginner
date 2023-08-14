@@ -1,10 +1,12 @@
 import React from "react";
-import "./styles.css"
-import Sidebar from "../../Sidebar/Sidebar";
+//import styles from "./styles.library.css"
+//import Sidebar from "../../Sidebar/Sidebar";
 
-const Header = () => {
-    return ( 
-        <body>
+const Library = () => {
+    return (
+        <> 
+        {/*
+        <main>
             <div className="center">
 
                 <Sidebar/>
@@ -44,8 +46,10 @@ const Header = () => {
                     </div>
                 </div>
                 </div>
-        </body>
+        </main>
+    */}
+    </>
     );
 }
  
-export default Header;
+export default Library;

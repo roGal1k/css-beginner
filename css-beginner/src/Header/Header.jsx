@@ -1,9 +1,11 @@
 import React from "react";
+import ReactDOM from 'react-dom';
 import "./styles.css"
+import {Link} from 'react-router-dom';
 
 //const [pageSelected,setPageSelected] = useState(0); 
 
-const Header = () => {
+const Header = ({ setCurrentPage }) => {
     return ( 
         <div className="top-pannel">
             <div className="menu-button">
@@ -13,9 +15,17 @@ const Header = () => {
             </div>
 
             <div className="navbar">
-                <button className="navbar-button" title="Home" >Home</button>
-                <button className="navbar-button" title="Library">Library</button>
-                <button className="navbar-button" title="Comunity">Comunity</button>
+                <Link 
+                to="/Pages/Home/Home" 
+                className="navbar-button" 
+                title="Home"
+                onClick={() => setCurrentPage('Home')} >Home</Link>
+                <Link 
+                to="/Pages/Library/Library" 
+                className="navbar-button" 
+                title="Library"
+                onClick={() => setCurrentPage('Library')}>Library</Link>
+                <button className="navbar-button" title="Community">Community</button>
                 <button className="navbar-button" title="Templaytes">Templaytes</button>
             </div>
 

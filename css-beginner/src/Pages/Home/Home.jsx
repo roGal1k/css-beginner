@@ -1,47 +1,38 @@
 import React from "react";
-import "./styles.css"
+import styles from "./styles.css"
+import Card from "./../../Components/Card/Card"
 
 const Home = () => {
     return ( 
-        <body>
-            <div className="center">
+        <section className={styles.section}>
+            <div className={styles.monsray}>
+                <div className={styles.projectsList}>
+                </div>
+                
+                <div className={styles.helloMsg}>
+                </div>
+                
+                <button className={styles.templaytes}>
+                    Load templaytes from storage 
+                </button>
+                <button className={styles.templaytes}>
+                    Save templaytes in storage 
+                </button>
+                
+                <button className={styles.bigBlueButton}>
+                    Open Library 
+                </button>
 
-                <div className="workspace">
-                    <div className="name-pannel">
-                        <name-paragraph>
-                            Last seen
-                        </name-paragraph>
-                        <div style={{color:'rgba(255,255,255,0.8)'}}>
-                            Show all
-                        </div>
-                    </div>
-                    <div className="home-page">
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                    </div>
-                    <div className="name-pannel">
-                    <div style={{ color: 'white', fontWeight: 'bold', fontSize: 'large' }}>
-                            Completed projects
-                        </div>
-                        <div style={{color:'rgba(255,255,255,0.8)'}}>
-                            Show all
-                        </div>
-                    </div>
-                    <div className="home-page">
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                    </div>
-                </div>
-                </div>
-        </body>
+                <button className={styles.bigBlueButton}>
+                    New project
+                </button>
+            </div>
+
+            <div>
+                Last drafts
+                {/*<Card/>*/}
+            </div>
+        </section >
     );
 }
  

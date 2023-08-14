@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import {createStore} from "redux"
 import { Provider } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
 const defaultState = {
   save:true,
@@ -22,8 +23,10 @@ const reducer =(state = defaultState, action)=>{
 const addProject = createStore(reducer)
 
 ReactDOM.render(
-  <Provider addProject={addProject}>
+  //<Provider addProject={addProject}>
+  <BrowserRouter>
     <App />
-  </Provider>,
+    </BrowserRouter>,
+  //</Provider>,
   document.getElementById('root')
 );

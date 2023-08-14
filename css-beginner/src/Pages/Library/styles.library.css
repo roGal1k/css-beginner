@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-body{
+.main{
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -17,7 +17,7 @@ body{
     margin-left:150px ;
 }
 
-.name-pannel{
+.name-library-pannel{
     display: flex;
     margin-left:20px;
     margin-right:20px;
@@ -26,7 +26,7 @@ body{
     border-bottom: 1px solid white;
 }
 
-.home-page{
+.library-page{
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@ body{
     align-content:space-around;
 }
 
-.project-home-page{
+.project-library-page{
     min-height: 30vh;
     min-width: 30vh;
     width: -moz-fit-conten;
@@ -47,13 +47,13 @@ body{
     box-shadow: 2px 1px 10px rgba(255, 255, 255, 0.49);
 }
 
-name-paragraph {
+name-library-paragraph {
     font-family: 'Stardom-Regular';
     color: white;
     font-size: 32; 
 }
 
-.center{
+.center-library{
     padding-top:4em;
     display: flex;
     flex-direction: row;
