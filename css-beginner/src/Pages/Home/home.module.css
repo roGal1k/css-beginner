@@ -1,0 +1,107 @@
+.section {
+    background-color: #1C1C1E;
+    min-height: 93.6vh;
+    padding-top: 4em;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
+}
+
+.gridContainer {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    gap: 30px;
+    min-height: 50vh;
+}
+
+.gridItemFirst {
+    background-color: rgba(255,255,255,0.11);
+    grid-column: 1 / span 1; 
+    grid-row: 1 / span 3; 
+    padding: 20px;
+}
+
+.gridItem {
+    background-color: rgba(255,255,255,0.11);
+    border:1px solid black;
+    padding: 20px;
+    min-height: 10vh;
+    align-self: stretch;
+}
+
+.gridItemTop {
+    background-color: rgba(255,255,255,0.11);
+    grid-column: 2 / span 2; 
+    grid-row: 1 / span 1; 
+    padding: 20px;
+    max-height: 5vh;
+    align-self: stretch;
+}
+
+.gridItemBottom {
+    background-color: rgba(255,255,255,0.11);
+    padding: 20px;
+    max-height: 5vh;
+    align-self: stretch;
+}
+
+.gridItemBottom:hover{
+    border:2px solid #67CAC4;
+}
+
+.gridItemTop:hover{
+    border:2px solid #67CAC4;
+}
+
+.gridItem:hover{
+    border:2px solid #67CAC4;
+}
+
+.gridItemFirst:hover {
+    border:2px solid #67CAC4;
+}
+
+.sectionTitleButton
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titleSection{
+    color: rgba(255,255,255,0.89);
+}
+
+.buttonSection{
+    color: rgba(255,255,255,0.78);
+    background-color: rgba(0,0,0,0);
+    border:none;
+}
+
+.buttonSection:hover{
+    text-decoration: underline;
+    color: rgba(255,255,255,1);
+    cursor: pointer;
+}
+
+.gridFavorite{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    min-height: 50vh;
+}
+
+.gridFavoriteItem{
+    background-color: rgba(255,255,255,0.11);
+    border:1px solid black;
+    padding: 20px;
+    min-height: 10vh;
+    align-self: stretch;
+}
+
+.gridFavoriteItem:hover{
+    border:2px solid #67CAC4;
+}

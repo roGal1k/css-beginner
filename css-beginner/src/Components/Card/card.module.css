@@ -1,0 +1,35 @@
+.section{
+    display: grid;
+    grid-template-columns:  1fr 3fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 30px;
+    background-color: rgba(255,255,255,0.11);
+    min-height: 50vh;
+    padding: 20px;
+
+}
+
+.titles{
+    color: white;
+}
+
+.containerTitle{
+    grid-column: 1 / span 2; 
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph{
+    color: rgba(255,255,255,0.89);
+}
+
+.buttonOpen{
+    background-color: #67CAC4;
+    color: white;
+}
+
+.preview{
+    grid-row: 2 / span 3; 
+    width: 25vh;
+    height: 25vh;;
+}

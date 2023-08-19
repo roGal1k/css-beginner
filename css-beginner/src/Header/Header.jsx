@@ -1,36 +1,36 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import "./styles.css"
+import styles from "./Header.module.css"
 import {Link} from 'react-router-dom';
 
 //const [pageSelected,setPageSelected] = useState(0); 
 
 const Header = ({ setCurrentPage }) => {
     return ( 
-        <div className="top-pannel">
-            <div className="menu-button">
-                <div className="menu-line"></div>
-                <div className="menu-line"></div>
-                <div className="menu-line"></div>
+        <section className={styles.topPannel}>
+            <div className={styles.menuButton}>
+                <div className={styles.menuLine}></div>
+                <div className={styles.menuLine}></div>
+                <div className={styles.menuLine}></div>
             </div>
 
-            <div className="navbar">
+            <div className={styles.navbar}>
                 <Link 
-                to="/Pages/Home/Home" 
-                className="navbar-button" 
+                to="/home" 
+                className={styles.navbarButton} 
                 title="Home"
                 onClick={() => setCurrentPage('Home')} >Home</Link>
                 <Link 
-                to="/Pages/Library/Library" 
-                className="navbar-button" 
+                to="/Library" 
+                className={styles.navbarButton} 
                 title="Library"
                 onClick={() => setCurrentPage('Library')}>Library</Link>
-                <button className="navbar-button" title="Community">Community</button>
-                <button className="navbar-button" title="Templaytes">Templaytes</button>
+                <button className={styles.navbarButton} title="Community">Community</button>
+                <button className={styles.navbarButton} title="Templaytes">Templaytes</button>
             </div>
 
-            <button className="create-button" title="Create Project">Create Project</button>
-        </div>
+            <button className={styles.createButton} title="Create Project">Create Project</button>
+        </section>
     );
 }
  

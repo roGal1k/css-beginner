@@ -28,11 +28,13 @@ function App() {
       }
   }
 
+  //style={{backgroundColor:'#1C1C1E', height:'98.78vh', width:'99.7%', margin:'0', padding:'0'}}
+
   return (
     <div className="App">
       <header className="App-header">   
       </header>
-      <main>
+      <main >
         <Header setCurrentPage={setCurrentPage} />
         {renderComponent()}
       </main>
