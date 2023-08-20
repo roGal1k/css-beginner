@@ -21,7 +21,7 @@ function App() {
         return <Community/>
       case 'Editor':
         return <Editor/>
-      case 'Templaytes':
+      case 'Templates':
         return <Templaytes/>
       default: 
         return <Home/>

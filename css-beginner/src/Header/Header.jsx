@@ -16,7 +16,7 @@ const Header = ({ setCurrentPage }) => {
 
             <div className={styles.navbar}>
                 <Link 
-                to="/home" 
+                to="/Home" 
                 className={styles.navbarButton} 
                 title="Home"
                 onClick={() => setCurrentPage('Home')} >Home</Link>
@@ -25,11 +25,23 @@ const Header = ({ setCurrentPage }) => {
                 className={styles.navbarButton} 
                 title="Library"
                 onClick={() => setCurrentPage('Library')}>Library</Link>
-                <button className={styles.navbarButton} title="Community">Community</button>
-                <button className={styles.navbarButton} title="Templaytes">Templaytes</button>
+                <Link 
+                to="/Community" 
+                className={styles.navbarButton} 
+                title="Community"
+                onClick={() => setCurrentPage('Community')}>Community</Link>
+                <Link 
+                to="/Templates" 
+                className={styles.navbarButton} 
+                title="Templates"
+                onClick={() => setCurrentPage('Templates')}>Templates</Link>
             </div>
 
-            <button className={styles.createButton} title="Create Project">Create Project</button>
+            <Link 
+                to="/Editor" 
+                className={styles.createButton} 
+                title="Create Project"
+                onClick={() => setCurrentPage('Editor')}>Create Project</Link>
         </section>
     );
 }
