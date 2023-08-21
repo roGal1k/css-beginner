@@ -1,54 +1,28 @@
 import React from "react";
-//import styles from "./styles.library.css"
-//import Sidebar from "../../Sidebar/Sidebar";
+import styles from "./Library.module.css"
+import {Sidebar} from "../../Sidebar/SidebarLibrary";
 
 const Library = () => {
     return (
-        <> 
-        {/*
-        <main>
-            <div className="center">
+        <main className={styles.main}> 
+            <Sidebar/>
 
-                <Sidebar/>
-
-                <div className="workspace">
-                    <div className="name-pannel">
-                        <name-paragraph>
-                            Last seen
-                        </name-paragraph>
-                        <div style={{color:'rgba(255,255,255,0.8)'}}>
-                            Show all
-                        </div>
-                    </div>
-                    <div className="home-page">
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                    </div>
-                    <div className="name-pannel">
-                    <div style={{ color: 'white', fontWeight: 'bold', fontSize: 'large' }}>
-                            Completed projects
-                        </div>
-                        <div style={{color:'rgba(255,255,255,0.8)'}}>
-                            Show all
-                        </div>
-                    </div>
-                    <div className="home-page">
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                        <div className="project-home-page"></div>
-                    </div>
+            <div className={styles.cardGalery}>
+                <div className={styles.overCardList}>
+                    <h1 className={styles.titleCardGalery}>Last projects</h1>
+                    <button className={styles.buttonShowMore}>Show All</button>
                 </div>
-                </div>
+                <br/>
+                <container className={styles.cardList}>
+                    <div className={styles.card}/>
+                    <div className={styles.card}/>
+                    <div className={styles.card}/>
+                    <div className={styles.card}/>
+                    <div className={styles.card}/>
+                </container>
+            </div>
+        
         </main>
-    */}
-    </>
     );
 }
  

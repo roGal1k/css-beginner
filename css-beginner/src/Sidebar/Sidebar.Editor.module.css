@@ -1,11 +1,13 @@
 .container {
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF11;
-    block-size: fit-content;
+    max-width: 300px;
     border-radius: 20px;
-    inline-size: fit-content;
 }
 
 .listAction{
+    width:inherit;
     background-color: #FFFFFF11;
     border-radius: 20px;
     border-start-start-radius:0px;
@@ -15,6 +17,7 @@
 }
 
 .action{
+    width:inherit;
     font-size: 14pt;
     color:white;
 }
@@ -22,9 +25,9 @@
 .listTemplates{
     padding:10px;
     font-size: large;
-    appearance: none;
-    -webkit-appearance: none;
     -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
     background-color: transparent;
     border: none; 
     border-radius: 0;

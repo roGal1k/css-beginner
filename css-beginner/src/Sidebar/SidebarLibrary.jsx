@@ -2,13 +2,30 @@ import React from "react";
 import styles from "./Sidebar.Library.module.css"
 
 export const Sidebar = () => {
-    return ( 
-        <div className="box">
-        <div className="group">
-              <div className="text-wrapper">+ New list</div>
-              <img className="img" alt="Group" src="group-3.png" />
-              <img className="group-2" alt="Group" src="group-4.png" />
-        </div>
-      </div>
+    return (
+    <section className={styles.section}>
+      <container className={styles.container}>
+        <div className={styles.action}>Last</div>
+        <div className={styles.action}>Completed</div>
+        <div className={styles.action}>Planned</div>
+        <div className={styles.action}>Abandoned</div>
+        <div className={styles.action}>Favorites</div>
+      </container>
+
+      <br/>
+
+      <container className={styles.container}>
+        <div className={styles.action}>React</div>
+        <div className={styles.action}>Golang</div>
+        <div className={styles.action}>Qt++</div>
+        <div className={styles.action}>Python</div>
+        <div className={styles.action}>Other</div>
+      </container>
+
+      <br/>
+
+      <div className={styles.action}>+ New list</div>
+
+    </section>
     );
 }

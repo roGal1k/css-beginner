@@ -11,7 +11,7 @@ export const Sidebar = () => {
 
     return ( 
         <section >
-            <section className={styles.container} style={{ color: 'white' }}>
+            <section className={styles.container}>
                 
                 <div className={styles.customSelect}>
                     <select className={styles.listTemplates} value={selectedOption} onChange={handleOptionChange}>
