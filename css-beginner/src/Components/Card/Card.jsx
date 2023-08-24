@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./card.module.css"
 
-import img from "../../img/img.png"
+import img from "../../assets/img/img.png"
 
 class Card extends React.Component {
   constructor(props) {

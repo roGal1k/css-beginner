@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Header from './Header/Header';
+import Header from './Components/Header/Header';
 //import Footer from './Footer/Footer'
-import Home from './Pages/Home/Home'
-import Library from './Pages/Library/Library' 
-import Community from './Pages/Community/Community' 
-import Templaytes from './Pages/Templaytes/Templaytes'
-import Editor from './Pages/Editor/Editor' 
+import Home from './Components/Pages/Home/Home'
+import Library from './Components/Pages/Library/Library' 
+import Community from './Components/Pages/Community/Community' 
+import Templaytes from './Components/Pages/Templaytes/Templaytes'
+import Editor from './Components/Pages/Editor/Editor' 
 
 function App() {
   const [currentPage, setCurrentPage] = React.useState('Home');

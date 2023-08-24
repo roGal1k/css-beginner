@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Library.module.css"
-import {Sidebar} from "../../Components/Sidebar/SidebarLibrary";
+import {Sidebar} from "../../Sidebar/SidebarLibrary";
 
 const Library = () => {
     return (

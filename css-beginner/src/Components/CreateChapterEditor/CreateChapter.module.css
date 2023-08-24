@@ -1,16 +1,43 @@
 .section{
     background-color: rgba(255,255,255,0.11);
     padding: 15px;
+    padding-left: 30px; 
+}
 
+.buttonBlock{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    height: fit-content;
+    border-bottom: 1px solid rgba(255,255,255,0.22);
 }
 
 .buttonAddNew{
     color: white;
-    font-size: 14pc;
+    font-size: 14pt;
     border: none;
     background: transparent;
+    margin:0;
+    padding:0;
+    padding-bottom:5px;
 }
 
 .block{
+}
 
+.headerChapter
+{
+    font-size: 20pt;
+    color: white;
+}
+
+.textParagraph{
+    color: white;
+    font-size: 16pt;
 }

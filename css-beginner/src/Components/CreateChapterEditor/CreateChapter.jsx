@@ -5,20 +5,25 @@ import styles from "./CreateChapter.module.css"
 const CreateChapter = ({image}) => {
     return (
         <section className={styles.section}>
-            <button className={styles.buttonAddNew}>
-                + Add Chapter
-            </button>
+
+            <div className={styles.buttonBlock}>
+                <div className={styles.buttonGroup}>
+                    <button className={styles.buttonAddNew}>
+                        + Add Chapter
+                    </button>
+                </div> 
+            </div>
 
             <div className={styles.block}>
             
-                <h2 style={{color:"white"}}>Name block</h2>'
+                <h2 className={styles.headerChapter}>Name block</h2>
                 {image!==null ? 
                     <div>
                         <img alt="Preview project"/>
                     </div>
                     : console.log("image not install")
                 }
-                <p style={{color:"white"}}>
+                <p className={styles.textParagraph}>
                     This is a reducer, a pure function with (state, action) state signature.
                     It describes how an action transforms the state into the next state.
                     <br/>
@@ -30,7 +35,6 @@ const CreateChapter = ({image}) => {
                     follows a different convention (such as function maps) if it makes sense for your project...
                 </p>
             </div>
-
 
         </section>
     );

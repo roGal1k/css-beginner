@@ -1,7 +1,7 @@
 import React from "react";
 
-import {Sidebar} from "../../Components/Sidebar/SidebarEditor"
-import CreateChapter from "../../Components/CreateChapterEditor/CreateChapter"
+import {Sidebar} from "../../Sidebar/SidebarEditor"
+import CreateChapter from "../../CreateChapterEditor/CreateChapter"
 import style from "./Editor.module.css";
 
 const Editor = () => {
