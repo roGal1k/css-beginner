@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './App.module.css'
 
 import Header from './Components/Header/Header';
 //import Footer from './Footer/Footer'
@@ -34,7 +35,7 @@ function App() {
     <div className="App">
       <header className="App-header">   
       </header>
-      <main >
+      <main className={style.main} >
         <Header setCurrentPage={setCurrentPage} />
         {renderComponent()}
       </main>

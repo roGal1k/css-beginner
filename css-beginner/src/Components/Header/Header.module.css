@@ -1,14 +1,21 @@
-.topPannel{
+.main{
     position: fixed;
     top: 0;
     left: 0;
-    width: 98.1%;
+    width: 100%;
     height: 2em;
+    display: flex;
+    flex-direction: row;
     background-color: #050505;
+    border-radius: 0;
+    padding:1em;
+}
+
+.content{
+    width: calc(100% - 2em);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1em;
 }
 
 .menuButton{
@@ -33,13 +40,6 @@
     border-radius: 1.5px;
 }
 
-.menuBar{
-    min-width: 120px;
-    width:10%;
-    background-color: aqua;
-    height: 100vh;
-}
-
 .createButton{
     color:white;
     font-size: 1.2em;
@@ -59,14 +59,14 @@
 }
 
 .navbar{
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-around;;
     height: 100%;
-    width: 60%;
 }
 
-.navbarButton{
+.navbarPages{
     background-color: rgba(0,0,0,0);
     border:none;
     display: flex;
@@ -77,7 +77,7 @@
     font-size: 1em;
 }
 
-.navbarButton:hover{
+.navbarPages:hover{
     color: #67CAC4;
     cursor: pointer;
 }
