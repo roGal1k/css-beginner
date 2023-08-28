@@ -1,4 +1,51 @@
-*{
+.main{
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: calc(100vh - 3em - 30px);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    gap:10px;
+}
+
+.titleBlock{
+    display: flex;
+    flex-direction: row;
+}
+
+.title{
+    flex: 1;
+    font-size: 24px;
+    color: white;
+}
+
+.showAll
+{
+    border: none;
+    background: transparent;
+    color: rgba(255,255,255,0.44);
+}
+
+.showAll:hover{
+    color: white;
+    cursor: pointer;
     margin: 0;
-    box-sizing: border-box;
+    text-decoration: underline;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.editor{
+    flex:1;
 }

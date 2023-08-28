@@ -1,13 +1,13 @@
 import React from 'react';
 import style from './App.module.css'
 
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer'
-import Home from './Components/Pages/Home/Home'
-import Library from './Components/Pages/Library/Library' 
-import Community from './Components/Pages/Community/Community' 
-import Templaytes from './Components/Pages/Templates/Templates'
-import Editor from './Components/Pages/Editor/Editor' 
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer'
+import Home from './components/Pages/Home/Home'
+import Library from './components/Pages/Library/Library' 
+import Community from './components/Pages/Community/Community' 
+import Templates from './components/Pages/Templates/Templates'
+import Editor from './components/Pages/Editor/Editor' 
 
 function App() {
   const [currentPage, setCurrentPage] = React.useState('Home');
@@ -23,7 +23,7 @@ function App() {
       case 'Editor':
         return <Editor/>
       case 'Templates':
-        return <Templaytes/>
+        return <Templates/>
       default: 
         return <Home/>
       }
