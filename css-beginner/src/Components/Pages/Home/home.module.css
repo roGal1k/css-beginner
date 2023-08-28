@@ -1,14 +1,12 @@
 .section {
     background-color: #1C1C1E;
     min-height: 100vh;
-    padding-top: 4em;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0;
 }
 
 .gridContainer {
-    padding-top: 30px;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
     grid-template-rows: 2fr 3fr 1fr;

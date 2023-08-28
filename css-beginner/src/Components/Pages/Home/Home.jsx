@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./home.module.css"
-import Card from "../../Card/Card"
+import CardLarge from "../../Cards/CardLarge/CardLarge"
 
 const Home = () => {
     return ( 
@@ -19,7 +19,7 @@ const Home = () => {
 
             <container title="Card last projects">
                 <h3 className={style.titleSection}>Last drafts</h3>
-                {<Card/>}
+                {<CardLarge/>}
             </container>
 
             <br/>
@@ -41,6 +41,8 @@ const Home = () => {
                     <div className={style.gridFavoriteItem}>9</div>
                 </div>
             </container>
+            
+            <br/>
 
         </section>
     );

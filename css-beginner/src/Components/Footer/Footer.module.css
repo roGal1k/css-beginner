@@ -1,0 +1,25 @@
+.main{
+    background: #050505;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+}
+
+.itemSocialNetwork{
+    display: flex;
+    flex-direction: row;
+}
+
+.iconSocialNetwork{
+    width: 24px;
+    height: 24px;
+}
+
+.textSocialNetwork{
+    padding-left: 4px;
+    color: rgba(255,255,255,0.88);
+    font-size: 14pt;
+}

@@ -2,11 +2,11 @@ import React from 'react';
 import style from './App.module.css'
 
 import Header from './Components/Header/Header';
-//import Footer from './Footer/Footer'
+import Footer from './Components/Footer/Footer'
 import Home from './Components/Pages/Home/Home'
 import Library from './Components/Pages/Library/Library' 
 import Community from './Components/Pages/Community/Community' 
-import Templaytes from './Components/Pages/Templaytes/Templaytes'
+import Templaytes from './Components/Pages/Templates/Templates'
 import Editor from './Components/Pages/Editor/Editor' 
 
 function App() {
@@ -29,8 +29,6 @@ function App() {
       }
   }
 
-  //style={{backgroundColor:'#1C1C1E', height:'98.78vh', width:'99.7%', margin:'0', padding:'0'}}
-
   return (
     <div className="App">
       <header className="App-header">   
@@ -39,6 +37,7 @@ function App() {
         <Header setCurrentPage={setCurrentPage} />
         {renderComponent()}
       </main>
+      <Footer/>
     </div>
   );
 }

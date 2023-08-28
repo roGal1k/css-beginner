@@ -1,0 +1,33 @@
+.section{
+    display: grid;
+    grid-template-columns:  1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.11);
+    padding: 20px;
+}
+
+.titles{
+    color: white;
+}
+
+.containerTitle{
+    grid-column: 1 / span 2; 
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph{
+    color: rgba(255,255,255,0.89);
+}
+
+.buttonOpen{
+    background-color: #67CAC4;
+    color: white;
+}
+
+.preview{
+    grid-row: 2 / span 2; 
+    width: 100%;
+    height: 100%;
+}

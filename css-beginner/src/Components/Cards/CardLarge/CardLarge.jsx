@@ -1,10 +1,10 @@
 import React from "react";
 
-import styles from "./card.module.css"
+import styles from "./cardLarge.module.css"
 
-import img from "../../assets/img/img.png"
+import img from "../../../assets/img/img.png"
 
-class Card extends React.Component {
+class CardLarge extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
@@ -70,4 +70,4 @@ class Card extends React.Component {
   }
 }
   
-export default Card;
+export default CardLarge;

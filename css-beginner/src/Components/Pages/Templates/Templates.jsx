@@ -1,7 +1,7 @@
 import React from "react";
 
-const Templaytes = () => {
+const Template = () => {
     return ( <></> );
 }
  
-export default Templaytes;
+export default Template;

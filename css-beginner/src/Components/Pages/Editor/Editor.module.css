@@ -1,8 +1,5 @@
 .section {
-    padding-top: 30px;
-    background-color: #1C1C1E;
-    min-block-size: 93.6vh;
-    padding-block-start: 4em;
+    padding-block-end: 30px;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0;
